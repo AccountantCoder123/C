@@ -8,7 +8,7 @@ int main(){
 	double x=3;
 	for(int i=0;i<100;i++){
 		x=x-(func(x))/derivative(x);
-		if(abs(func(x))<0.0005){
+		if(fabs(func(x))<0.0005){
 			printf("The root is %lf",x);
 			break;
 		}
